@@ -61,7 +61,7 @@ springboot-microservices-devops/
 
 ### 1. Clone the repository
 ```bash
-git clone git@github-devops:devops0425/ecom-microservices.git
+git clone https://github.com/devops0425/ecom-microservices.git
 cd ecom-microservices
 ```
 
@@ -103,4 +103,5 @@ Automatically build, test, and deploy microservices using GitHub Actions or Jenk
 - Email: devopsapps.info@gmail.com
 
 - GitHub: https://github.com/devops0425
+
 
