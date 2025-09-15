@@ -1,78 +1,106 @@
-This is the Official repository of **Spring Boot Microservices Professional eCommerce Masterclass** on Udemy
+# Spring Boot Microservices — Production-Ready DevOps Project
 
-# The Ultimate Java and Spring Boot Mastery
+A full-stack **Spring Boot microservices** project with **end-to-end DevOps implementation**, containerized with **Docker**, orchestrated on **Kubernetes (EKS)**, and automated using **CI/CD pipelines (GitHub Actions/Jenkins)**. Includes **AWS infrastructure as code (Terraform)**, **observability (Grafana, Prometheus, Loki)**, and production-ready deployment practices.
 
-Welcome to your one-stop-shop for mastering Java and Spring Boot! This repository offers a comprehensive learning experience with high-quality resources and community support. Dive into over 23+ hours of premium content, with everything you need to excel at Java and Spring Boot development.
+---
 
-## 🎓 Learning Roadmap
+## 🚀 Project Overview
 
-Most of the courses below are available in **Udemy For Business**, so if you have subscription - you can get FREE access.
-Here’s a structured path to enhance your skills with detailed courses available:
+This project demonstrates a **real-world microservices architecture** with multiple services communicating via **Kafka and RabbitMQ**. It showcases best practices for:
 
-1. **[Spring Boot Full Stack By Building Complex Projects Step by Step](https://link.embarkx.com/spring-boot) (80+ Hours of Content)**
-2. **[Master Spring Boot Microservices](https://link.embarkx.com/microservices) (50+ Hours of Content)**
-3. **[Learn Java with 60+ Hours of Content](http://link.embarkx.com/java) (60+ Hours of Content)**
-4. **[Master Spring Security with React JS + OAuth2](https://link.embarkx.com/spring-security) (34+ Hours of Content)**
-5. **[Master IntelliJ IDEA](http://link.embarkx.com/intellij) (3+ Hours of Content)**
+- **Microservices development:** Spring Boot, JPA, PostgreSQL, MongoDB
+- **API gateways & service discovery:** Spring Cloud Gateway, Eureka
+- **Security:** Keycloak for authentication & authorization
+- **Observability:** Logging (Loki), metrics (Prometheus), tracing (Zipkin)
+- **Containerization & orchestration:** Docker, Docker Compose, Kubernetes
+- **Infrastructure automation:** Terraform (VPC, EKS, RDS, S3, IAM)
+- **CI/CD pipelines:** Build, test, and deploy microservices automatically
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend / Microservices:** Spring Boot, Java, JPA, PostgreSQL, MongoDB, Kafka, RabbitMQ
+- **Security:** Keycloak, Spring Security
+- **Containerization:** Docker, Docker Compose
+- **Orchestration:** Kubernetes, Helm
+- **CI/CD:** GitHub Actions / Jenkins
+- **Monitoring / Observability:** Grafana, Prometheus, Loki, Zipkin
+- **Cloud / Infrastructure:** AWS, Terraform
+
+---
+
+## 📂 Repository Structure
+
+springboot-microservices-devops/
+├── microservices/ # All Spring Boot services
+├── docker/ # Dockerfiles & Docker Compose configurations
+├── k8s/ # Kubernetes manifests & Helm charts
+├── terraform/ # AWS infrastructure as code (IaC)
+├── cicd/ # CI/CD pipeline configurations (GitHub Actions/Jenkins)
+├── monitoring/ # Grafana, Prometheus, Loki configurations
+├── scripts/ # Helper scripts for deployment & teardown
+└── README.md # Project documentation
 
 
-## 🌟 With All Our Courses You Gain Access To
 
-- 📝 **Notes:** Detailed and downloadable notes to accompany each lesson.
-- 💻 **Source Code:** Full access to the source code used in the tutorials.
-- 🤔 **Doubt Solving:** Responsive instructor and community support.
-- 🎥 **High-Quality HD Videos:** Easy to understand, high-definition video tutorials.
-- 🔄 **Free Lifetime Updates:** Continuous updates to course content at no extra cost.
+---
 
-## 📚 Why Choose This Mastery Series?
+## ⚡ Key Features
 
-With this series, you're not just learning; you're preparing to dominate the field of Java and Spring Boot development. Our structured learning path ensures that you build your skills progressively, with each course designed to build on the knowledge gained from the previous one.
+- Production-ready **multi-service architecture**
+- **Full CI/CD automation** for build, test, and deployment
+- AWS EKS cluster with **scalable, resilient microservices**
+- Observability stack for **logs, metrics, and distributed tracing**
+- **Secrets management** using AWS Secrets Manager
+- Modular, maintainable, and fully **cloud-native**
 
-### Join Us Now!
+---
 
-Start your journey today to become a master at Java and Spring Boot. Our community and expert instructors are here to support your learning every step of the way. **Enroll and start building your future, today!**
+## 📌 Usage
 
+### 1. Clone the repository
+```bash
+git clone git@github-devops:devops0425/ecom-microservices.git
+cd ecom-microservices
+```
 
+### 2. Run Docker Compose locally
+```dockerfile
+docker-compose up -d
+```
 
+### 3. Deploy to Kubernetes using Helm
+```bash
+helm install <release-name> ./k8s/helm
+```
 
+### 4. Provision AWS infrastructure using Terraform
+```bash
+cd terraform
+terraform init
+terraform apply
+```
 
-# Usage Policy for Course Materials
+### 5. CI/CD Pipelines
+```text
+Automatically build, test, and deploy microservices using GitHub Actions or Jenkins pipelines.
+```
 
-## Instructor Information
+### 🔑 Contributing / Notes
 
-**Instructor:** Faisal Memon  
-**Company:** [EmbarkX.com](http://www.embarkx.com)
+- This project is primarily for learning and demonstrating DevOps + microservices practices.
 
-## Policy Overview
+- Contributions to enhance automation, observability, or architecture are welcome.
+### 📄 License
 
-This document outlines the guidelines and restrictions concerning the use of course materials provided by EmbarkX, including but not limited to PDF presentations, code samples, and video tutorials.
+- This repository is open for personal use and learning purposes. Please contact the owner for commercial usage.
 
-### 1. Personal Use Only
+## 📌 Contact / Support
 
-The materials provided in this course are intended for **your personal use only**. They are to be used solely for the purpose of learning and completing this course.
+- Maintainer: DevOps Team
 
-### 2. No Unauthorized Sharing or Distribution
+- Email: devopsapps.info@gmail.com
 
-You are **not permitted** to share, distribute, or publicly post any course materials on any websites, social media platforms, or other public forums without prior written consent from the instructor.
-
-### 3. Intellectual Property
-
-All course materials are protected by copyright laws and are the intellectual property of Faisal Memon and EmbarkX. Unauthorized use, reproduction, or distribution of these materials is **strictly prohibited**.
-
-### 4. Reporting Violations
-
-If you become aware of any unauthorized sharing or distribution of course materials, please report it immediately to [embarkxofficial@gmail.com](mailto:embarkxofficial@gmail.com).
-
-### 5. Legal Action
-
-We reserve the right to take legal action against individuals or entities found to be violating this usage policy.
-
-## Thank You
-
-Thank you for respecting these guidelines and helping us maintain the integrity of our course materials.
-
-## Contact Information
-
-- **Email:** [embarkxofficial@gmail.com](mailto:embarkxofficial@gmail.com)
-- **Website:** [www.embarkx.com](http://www.embarkx.com)
+- GitHub: https://github.com/devops0425
 
